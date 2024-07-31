@@ -13,7 +13,7 @@ EMAIL_PASSWORD = 'geey tugd lnzr dfuz'
 EMAIL_TO = 'varil35414@gmail.com'
 SMTP_SERVER = 'smtp.gmail.com'
 SMTP_PORT = 587
-LOG_FILE_PATH = 'browser_activity.log'
+LOG_FILE_PATH = 'browser_activity.log' #Logging file
 CHECK_INTERVAL = 10  # in seconds   
 BROWSER_TO_CLOSE = 'chrome.exe'
 
@@ -85,7 +85,7 @@ def monitor_and_report():
         log_content = log_browser_activity()
         
         if log_content:
-            send_email('Browser Activity Report on PC_NO.:(Add PC number)', log_content)
+            send_email('Browser Activity Report on PC_NO.:(Add PC number)', log_content) # Important Information Needed to identify specific computers
         
         active_browsers = get_browser_processes()
         if BROWSER_TO_CLOSE in active_browsers:
