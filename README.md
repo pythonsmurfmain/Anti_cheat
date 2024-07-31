@@ -34,12 +34,21 @@ These instructions guide you through the process of installing and running the A
    ```
    pip install pygetwindow
    ```
-3. **Run the Executable in Background**:
-  ```cmd
-  cd PATH_TO_YOUR_FILE
-  ```
-  ```cmd
-  start /b Anti_Cheat.exe
-  ```
+3. **Installing File**:
 
-### Give Proper Permissions and add it to the exclusion list
+   ```cmd
+   cd 'Path\to\cloned_file'
+   ```
+   ```cmd
+   pyinstaller install Anti_cheat.py
+   ```
+
+4. **Run the Executable in Background**:
+   ```cmd
+   cd PATH_TO_YOUR_FILE
+   ```
+   ```cmd
+   start /b Anti_Cheat.exe
+   ```
+
+### Note: Before converting into .exe file first edit the Anti_cheat.py for the PC_number
